@@ -1,46 +1,51 @@
 <head>
-    <style>
-    #box
-        {
-            width:350px;
-            height:300px;
-            margin:0px auto;
-            border:2px solid black;
-            background:#c9f3ad
-        }
-        h2{
-            text-align: center;
-        }
-        table {
-            margin:0px auto;
-        }
-    </style>
-     </head>
-    <body>
-        <form align="center" method="post" enctype="multipart/form-data">
-        <div id="box">
-         <h2><center>Upload Multiple Files</center></h2>
+<head>
+    <meta charset="utf-8">
+    <title>Multiple Image Upload </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <a class="navbar-brand" href="https://linkedin.com/in/nditah">Nditah</a>
+            </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/upload-multer"> Upload Multer</a></li>
+        <li><a href="/upload-resize"> Upload Resize</a></li>
+        <li  class="active"><a href="/upload-multiple"> Upload Multiple</a></li>
+        <li><a href="/upload-cloudinary"> Upload Cloudinary</a></li>
+        </ul>
+    </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Upload Multiple Files</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <div>
          <table>
             <tr>
                 <td>
-                <input type="file" name="myimage1" /><br/><br/>
+                <input type="file" name="myimage1" class="form-control"/><br/><br/>
                 </td>
             </tr>
             <tr>
                 <td>
-                <input type="file" name="myimage2" /><br/><br/>
+                <input type="file" name="myimage2" class="form-control"/><br/><br/>
                 </td>
             </tr>
             <tr>
                 <td>
-                <input type="file" name="myimage3" /><br/><br/>
+                <input type="file" name="myimage3" class="form-control"/><br/><br/>
                 </td>
             </tr>
             <tr>
                 <td>
-                <center>
-                <input type="submit" name="submit" value="submit"></center>
-            </td>
+                        <button type="submit" name="upload" class="btn btn-primary">Upload</button>
+                    </td>
             </tr>
             </table>
             </div>

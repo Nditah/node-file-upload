@@ -1,13 +1,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Uploading Multer</title>
-  </head>
-  <body>
-      <p>Uploading Cloudinary</p>
+    <title>Uploading to Cloudinary</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://linkedin.com/in/nditah">Nditah</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/upload-multer"> Upload Multer</a></li>
+        <li><a href="/upload-resize"> Upload Resize</a></li>
+        <li><a href="/upload-multiple"> Upload Multiple</a></li>
+        <li class="active"><a href="/upload-cloudinary"> Upload Cloudinary</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+  <div class="container">
+      <h1>Uploading Cloudinary</h1>
       <form method="post" action="/upload-cloudinary" enctype="multipart/form-data">
-        <input type="file" name="image" /><br /><br />
-        <button type="submit" name="upload">Upload</button>
+        <input type="file" name="image" class="form-control" /><br /><br />
+        <button type="submit" name="upload" class="btn btn-primary">Upload</button>
       </form>
+      </div>
+
   </body>
 </html>
